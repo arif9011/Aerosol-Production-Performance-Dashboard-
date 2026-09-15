@@ -14,25 +14,8 @@ Fictional 60-day dataset for Power BI practice
 Good Units				Output Attainment				Reject Rate				OEE		
 3,599,267				86.6%				2.1%				79.8%		
 														
-Measure	DAX formula	Format	
 
-Good Units = SUM(AerosolProduction[Good Units])
-Rejected Units = SUM(AerosolProduction[Rejected Units])
-Downtime Minutes = SUM(AerosolProduction[Downtime Minutes])
-Run Minutes = SUM(AerosolProduction[Run Minutes])
-Availability = DIVIDE([Run Minutes], SUM(AerosolProduction[Planned Minutes]))
-Theoretical Run Minutes = SUMX(AerosolProduction, AerosolProduction[Total Units] * AerosolProduction[Ideal Cycle Seconds] / 60)
-Performance = DIVIDE([Theoretical Run Minutes], [Run Minutes])
-Quality = DIVIDE([Good Units], [Total Units])
-OEE = [Availability] * [Performance] * [Quality]
-Reject Rate = DIVIDE([Rejected Units], [Total Units])
-Output Attainment = DIVIDE([Good Units], [Planned Units])
 
-DAX Formula 
-
-Date Table = CALENDAR(MIN(AerosolProduction[Date]), MAX(AerosolProduction[Date]))
-Month = FORMAT('Date Table'[Date], "MMM yyyy")
-Month Sort = YEAR('Date Table'[Date]) * 100 + MONTH('Date Table'[Date])
 
 <img width="781" height="76" alt="image" src="https://github.com/user-attachments/assets/5340614a-9ffb-4b15-abf8-1c9058f1e823" />
 
