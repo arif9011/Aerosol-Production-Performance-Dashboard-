@@ -15,6 +15,7 @@ Good Units				Output Attainment				Reject Rate				OEE
 3,599,267				86.6%				2.1%				79.8%		
 														
 Measure	DAX formula	Format	
+
 Planned Units	Planned Units = SUM(AerosolProduction[Planned Units])	Whole number	
 Total Units	Total Units = SUM(AerosolProduction[Total Units])	Whole number	
 Good Units	Good Units = SUM(AerosolProduction[Good Units])	Whole number	
@@ -32,6 +33,7 @@ Output Attainment	Output Attainment = DIVIDE([Good Units], [Planned Units])	Perc
 			
 			
 Date-table item	DAX formula	Use	
+
 Date Table	Date Table = CALENDAR(MIN(AerosolProduction[Date]), MAX(AerosolProduction[Date]))	Create as New table	
 Month	Month = FORMAT('Date Table'[Date], "MMM yyyy")	Create as calculated column	
 Month Sort	Month Sort = YEAR('Date Table'[Date]) * 100 + MONTH('Date Table'[Date])	Sort Month by this column	
