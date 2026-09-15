@@ -16,27 +16,28 @@ Good Units				Output Attainment				Reject Rate				OEE
 														
 Measure	DAX formula	Format	
 
-Planned Units	Planned Units = SUM(AerosolProduction[Planned Units])	Whole number	
-Total Units	Total Units = SUM(AerosolProduction[Total Units])	Whole number	
-Good Units	Good Units = SUM(AerosolProduction[Good Units])	Whole number	
-Rejected Units	Rejected Units = SUM(AerosolProduction[Rejected Units])	Whole number	
-Downtime Minutes	Downtime Minutes = SUM(AerosolProduction[Downtime Minutes])	Whole number	
-Run Minutes	Run Minutes = SUM(AerosolProduction[Run Minutes])	Whole number	
-Availability	Availability = DIVIDE([Run Minutes], SUM(AerosolProduction[Planned Minutes]))	Percentage, 1 decimal	
-Theoretical Run Minutes	Theoretical Run Minutes = SUMX(AerosolProduction, AerosolProduction[Total Units] * AerosolProduction[Ideal Cycle Seconds] / 60)	Decimal, 1 place
+Good Units = SUM(AerosolProduction[Good Units])
+Rejected Units = SUM(AerosolProduction[Rejected Units])
+Downtime Minutes = SUM(AerosolProduction[Downtime Minutes])
+Run Minutes = SUM(AerosolProduction[Run Minutes])
+Availability = DIVIDE([Run Minutes], SUM(AerosolProduction[Planned Minutes]))
+Theoretical Run Minutes = SUMX(AerosolProduction, AerosolProduction[Total Units] * AerosolProduction[Ideal Cycle Seconds] / 60)
+Performance = DIVIDE([Theoretical Run Minutes], [Run Minutes])
+Quality = DIVIDE([Good Units], [Total Units])
+OEE = [Availability] * [Performance] * [Quality]
+Reject Rate = DIVIDE([Rejected Units], [Total Units])
+Output Attainment = DIVIDE([Good Units], [Planned Units])
 
-Performance	Performance = DIVIDE([Theoretical Run Minutes], [Run Minutes])	Percentage, 1 decimal	
-Quality	Quality = DIVIDE([Good Units], [Total Units])	Percentage, 1 decimal	
-OEE	OEE = [Availability] * [Performance] * [Quality]	Percentage, 1 decimal	
-Reject Rate	Reject Rate = DIVIDE([Rejected Units], [Total Units])	Percentage, 1 decimal	
-Output Attainment	Output Attainment = DIVIDE([Good Units], [Planned Units])	Percentage, 1 decimal	
-			
-			
-Date-table item	DAX formula	Use	
+DAX Formula 
 
-Date Table	Date Table = CALENDAR(MIN(AerosolProduction[Date]), MAX(AerosolProduction[Date]))	Create as New table	
-Month	Month = FORMAT('Date Table'[Date], "MMM yyyy")	Create as calculated column	
-Month Sort	Month Sort = YEAR('Date Table'[Date]) * 100 + MONTH('Date Table'[Date])	Sort Month by this column	
+Date Table = CALENDAR(MIN(AerosolProduction[Date]), MAX(AerosolProduction[Date]))
+Month = FORMAT('Date Table'[Date], "MMM yyyy")
+Month Sort = YEAR('Date Table'[Date]) * 100 + MONTH('Date Table'[Date])
+
+<img width="781" height="76" alt="image" src="https://github.com/user-attachments/assets/5340614a-9ffb-4b15-abf8-1c9058f1e823" />
+
+<img width="781" height="291" alt="image" src="https://github.com/user-attachments/assets/71b1f937-2673-4e80-b346-cc191541a3c9" />
+
 			
 <img width="1211" height="531" alt="image" src="https://github.com/user-attachments/assets/7c483868-c1aa-4ea5-9713-4cd456141dd4" />
 													
