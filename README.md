@@ -17,9 +17,6 @@ Good Units				Output Attainment				Reject Rate				OEE
 
 
 
-
-<img width="781" height="291" alt="image" src="https://github.com/user-attachments/assets/71b1f937-2673-4e80-b346-cc191541a3c9" />
-
 			
 <img width="1211" height="531" alt="image" src="https://github.com/user-attachments/assets/7c483868-c1aa-4ea5-9713-4cd456141dd4" />
 													
