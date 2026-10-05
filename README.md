@@ -45,8 +45,6 @@ All data in this project is synthetic and created for portfolio/learning purpose
 ☐ Screenshots exported
 ☐ README completed
 ☐ GitHub repository uploaded using synthetic data only
-
-Aerosol Production Power BI Portfolio Guide — Ariful Islam
 													
 														
 Good Units				Output Attainment				Reject Rate				OEE		
