@@ -1,15 +1,57 @@
-# Aerosol-Production-Performance-Dashboard-
-•	Created a Power BI-ready fictional manufacturing dataset containing 180 production records. 
-•	Designed KPIs for output attainment, reject rate, downtime, availability, performance, quality and OEE. 
-•	Analyzed production performance by date, shift, line and downtime reason. 
-•	Created an interactive dashboard design using Excel, Power Query concepts and DAX measures. 
-•	Used fictional information to maintain employer and customer confidentiality.
+# Aerosol Production Analytics Dashboard
 
+## Overview
+A Power BI manufacturing analytics portfolio project built with fictional aerosol-production data.
 
+## Objective
+Analyse production output, target attainment, quality, rejects, waste, downtime, cycle time, machine performance and shift performance.
 
-Aerosol production performance dashboard														
-														
-Fictional 60-day dataset for Power BI practice														
+## Tools
+Excel | Power Query | Power BI | DAX | GitHub
+
+## Dashboard Pages
+1. Production Overview
+2. Quality Analysis
+3. Downtime & Efficiency
+4. Machine & Shift Performance
+
+## Data Privacy
+All data in this project is synthetic and created for portfolio/learning purposes.
+
+## Author
+Ariful Islam
+18. CV Project Description
+Aerosol Production Analytics Dashboard — Power BI Portfolio Project
+Developed an end-to-end manufacturing analytics dashboard using fictional aerosol-production data. Used Power Query and DAX to analyse planned versus actual output, production attainment, good/reject units, reject rate, material waste, cycle time, machine downtime and shift performance, presenting operational insights through interactive Power BI visualisations.
+19. Skills Demonstrated
+•	Manufacturing data analytics
+•	Excel
+•	Power Query
+•	Power BI
+•	DAX
+•	Data cleaning and transformation
+•	Production KPI reporting
+•	Quality and reject analysis
+•	Downtime analysis
+•	Dashboard design
+•	Business insight communication
+•	GitHub portfolio documentation
+20. Project Completion Checklist
+☐ Synthetic aerosol dataset prepared
+☐ Power Query cleaning completed
+☐ DAX measures created
+☐ Production Overview completed
+☐ Quality Analysis completed
+☐ Downtime & Efficiency completed
+☐ Machine & Shift Performance completed
+☐ Dashboard totals validated
+☐ Insights documented
+☐ Screenshots exported
+☐ README completed
+☐ GitHub repository uploaded using synthetic data only
+
+Aerosol Production Power BI Portfolio Guide — Ariful Islam
+													
 														
 Good Units				Output Attainment				Reject Rate				OEE		
 3,599,267				86.6%				2.1%				79.8%		
