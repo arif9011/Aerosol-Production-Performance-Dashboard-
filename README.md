@@ -18,13 +18,9 @@ Excel | Power Query | Power BI | DAX | GitHub
 ## Data Privacy
 All data in this project is synthetic and created for portfolio/learning purposes.
 
-## Author
-Ariful Islam
-18. CV Project Description
-Aerosol Production Analytics Dashboard — Power BI Portfolio Project
-Developed an end-to-end manufacturing analytics dashboard using fictional aerosol-production data. Used Power Query and DAX to analyse planned versus actual output, production attainment, good/reject units, reject rate, material waste, cycle time, machine downtime and shift performance, presenting operational insights through interactive Power BI visualisations.
-19. Skills Demonstrated
+ Skills Demonstrated
 •	Manufacturing data analytics
+
 •	Excel
 •	Power Query
 •	Power BI
